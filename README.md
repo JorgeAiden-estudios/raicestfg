@@ -1,2 +1,2 @@
-# raicestfg
-Prueba de despliegue
+# basic-sample-php-template-example
+Explanation for organizing the file structure

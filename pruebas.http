@@ -1,0 +1,103 @@
+### Iniciar sesión y obtener una sesión
+POST http://localhost:8000/api/login.php
+Content-Type: application/json
+
+{
+    "DNI": "11111112",
+    "password": "12345",
+    "userType": "alumno"
+}
+
+###
+
+### Prueba para obtener todas las faltas
+GET http://localhost:8000/api/faltas.php
+
+###
+
+### Prueba para obtener faltas en una fecha específica
+GET http://localhost:8000/api/faltas.php?fecha=2025-02-26
+
+###
+
+### Prueba para crear una nueva falta
+POST http://localhost:8000/api/faltas.php
+Content-Type: application/json
+
+{
+  "fecha": "2025-02-28",
+  "hora": "sexta",
+  "motivo": "Motivo de prueba"
+}
+
+###
+
+### Prueba para actualizar una falta existente
+PUT http://localhost:8000/api/faltas.php
+Content-Type: application/json
+
+{
+  "id": 4,
+  "fecha": "2025-02-27",
+  "hora": "primera",
+  "motivo": "Motivo actualizado"
+}
+
+###
+
+### Prueba para eliminar una falta
+DELETE http://localhost:8000/api/faltas.php
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
+###
+
+# Prueba GET para obtener los profesores del alumno
+GET http://localhost:8000/api/alumnoProfesor.php
+Content-Type: application/json
+
+###
+
+# Prueba POST para asignar un profesor a un alumno
+POST http://localhost:8000/api/alumnoProfesor.php
+Content-Type: application/json
+
+{
+  "id_profesor": 1,
+  "centro": "Centro de Ejemplo"
+}
+
+###
+
+# Prueba PUT para actualizar la relación entre un alumno y un profesor
+PUT http://localhost:8000/api/alumnoProfesor.php
+Content-Type: application/json
+
+{
+  "id_profesor": 1,
+  "centro": "Nuevo Centro"
+}
+
+###
+
+# Prueba DELETE para eliminar la relación entre un alumno y un profesor
+DELETE http://localhost:8000/api/alumnoProfesor.php
+Content-Type: application/json
+
+{
+    "name": "maria",
+    "password": "12345"
+}
+
+###post
+POST http://localhost:8000/api/login.php
+Content-Type: application/json
+{
+    "DNI": "maria",
+    "password": "12345",
+    "userType": "alumno"
+}
+

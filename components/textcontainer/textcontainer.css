@@ -1,0 +1,19 @@
+  /* Estilos comunes para el contenedor de texto */
+  .text-container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 90%; 
+    background-color: var(--primary-1);
+    max-width: 100%;
+  }
+  
+  .sidetext {
+    padding-top: 20px;
+    background-image: url(../../assets/img_parallax.jpg);
+    background-size: 90vh;
+    background-repeat: no-repeat;
+  }
+
+  .centertext {
+    padding-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }

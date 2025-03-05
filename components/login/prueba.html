@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form name="Formulario_Iden_usu" method="post">
+    <fieldset>
+        <div class="camposLogin">
+            <input  id="USUARIO" type="text" name="USUARIO" placeholder="Usuario" size="15" maxlength="25" value="" onkeypress="return pressKey('USUARIO',event)">
+        </div>
+        <div class="camposLogin" id="c_pass">
+            <input  id="CLAVE_P" type="password" name="CLAVE_P" placeholder="Contraseña" size="15" maxlength="15" onkeypress="return pressKey('CLAVE_P',event)"> 
+        </div>
+        <div class="camposLogin" id="c_text" style="display:none;">
+            <input  id="CLAVE_T" type="text" name="CLAVE_T" placeholder="Contraseña" size="15" maxlength="25" onkeypress="return pressKey('CLAVE_T',event)">
+        </div>
+        <div class="checkLogin">
+            <input class="filled-in" id="VER_CLAVE" type="checkbox" name="VER_CLAVE" onclick="javascript:mostrarclave()">&nbsp;
+            <label for="VER_CLAVE" title="Ver clave" style="margin-bottom: 3%;"><span></span>Mostrar contraseña</label>
+        </div>
+        <div class="boton_right">
+            <input name="Entrar" id="Entrar" value="Entrar" class="btn" alt="Entrar" title="Entrar" type="button" onclick="javascript:comprobarclave()">
+        </div>
+        <input type="hidden" name="CON_PRUEBA" value="N">
+        <div id="MENSAJE"></div>
+    </fieldset>
+    
+</form>
+
+
+
+<form id="loginForm" action="authenticate.php" method="POST">
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="password">Contraseña:</label>
+    <input type="password" name="password" id="password" required>
+
+    <button type="submit">Iniciar Sesión</button>
+    <p><a href="register.php">¿No tienes cuenta? Regístrate aquí.</a></p>
+
+</form>
+    
+</body>
+</html> 

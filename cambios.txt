@@ -1,0 +1,120 @@
+/* common.css */
+
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
+/* Estilos comunes para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Degradado de azul claro a azul oscuro */
+    color: var(--white); /* Color de texto blanco para mejor legibilidad */
+}
+
+
+
+/* Estilos comunes para la navbar */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #008080;
+    color: #fff;
+  }
+  
+  /* Estilos comunes para los enlaces de navegación */
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+  
+  nav a:hover {
+    background-color: #008080;
+  }
+  
+  /* Estilos comunes para el contenedor de texto */
+  .text-container {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos comunes para el pie de página */
+  footer {
+    background-color: #008080;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Estilos comunes para los formularios */
+  .form-control {
+    min-height: 48px;
+    line-height: 45px;
+    background-color: #fff;
+    color: rgba(22, 22, 22, 0.75);
+    border: 0;
+    border-radius: 100px;
+    padding: 0 25px;
+    font-weight: 700;
+  }
+  
+  .form-control::placeholder {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .form-control:focus {
+    border-color: #0d6efd;
+  }
+  
+  /* Estilos comunes para los botones */
+  .btn {
+    height: 48px;
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    background-color: #0d6efd;
+    color: #ffffff;
+    border-radius: 100px;
+  }
+  
+  .btn:hover {
+    color: #ffffff;
+    background-color: rgba(13, 110, 253, 0.9);
+  }
+
+// ------------------------------------
+
+  <div class="">    
+  <div class="row content h-auto">
+    <div class="col-2 sidenav h-auto">
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+    </div>
+    <div class="col-8 text-left h-auto"> 
+      <h1>Welcome</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+      <h3>Test</h3>
+      <p>Lorem ipsum...</p>
+      <a href="../../src/contact.php">PRUEBA</a>
+    </div>
+    <div class="col-2 sidenav h-auto">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>

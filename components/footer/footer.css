@@ -1,0 +1,31 @@
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: var(--primary-5);
+      color: var(--primary-1);
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
+  
+  footer a {
+      color: var(--terciary-1);
+      margin: 0 10px;
+      text-decoration: none;
+  }
+  
+  footer a:hover {
+      text-decoration: underline;
+  }
+  
+  .footer-left, .footer-right {
+      display: flex;
+      flex: 1;
+      justify-content: space-around;
+  }
+  
+  .footer-center {
+      flex: 1;
+      text-align: center;
+  }

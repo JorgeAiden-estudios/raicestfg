@@ -1,0 +1,40 @@
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      /* padding-left: 5%; */
+      /* padding-right: 5%; */
+      border-radius: 0;
+      overflow: hidden;
+      background-color: var(--primary-5);
+    }
+    
+    .navbar-header {
+      padding-top: 20px;
+      background-color: var(--primary-1);
+      height: 100%;
+    }
+    
+    .nav-item {
+      padding: 10px;
+      font-size: 1.5em;
+    }
+
+    .navbar-brand {
+      /* background-color: black; */
+      height: 100%;
+      padding-right: 5%;
+    }
+        
+    .logo-img {
+      max-width: 150px;
+    }
+
+    #registro {
+      border-color: var(--terciary-5);
+      background-color: var(--terciary-3);
+    }
+
+    #login {
+      border-color: var(--complement-5);
+      background-color: var(--complement-3);
+    }
